@@ -13,3 +13,8 @@ function updateTotalPrice() {
 
     totalPriceElement.textContent = totalPrice.toFixed(2)
 }
+
+// Task 2: Add Event Listener for Product Selection
+
+productSelector.addEventListener("change", updateTotalPrice)
+quantityInput.addEventListener("input", updateTotalPrice)
